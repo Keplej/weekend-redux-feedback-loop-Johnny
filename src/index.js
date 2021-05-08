@@ -32,11 +32,19 @@ const supportedReducer = (state = 0, action) => {
     return state;
 }
 
+const commentsReducer = (state = '', action) => {
+    if (action.type === 'GET_COMMENTS') {
+        return action.payload;
+    }
+    return state;
+}
+
 const reduxStore = createStore(
     combineReducers({
         feelingsReducer,
         understandingReducer,
         supportedReducer,
+        commentsReducer,
     }),
     applyMiddleware(logger),
 )

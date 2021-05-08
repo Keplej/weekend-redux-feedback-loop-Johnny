@@ -7,6 +7,7 @@ import {useDispatch} from 'react-redux';
 import Feelings from '../Feelings/Feelings';
 import Understanding from '../Understanding/Understanding';
 import Supported from '../Supported/Supported';
+import Comments from '../Comments/Comments';
 
 function App() {
 
@@ -45,6 +46,9 @@ function App() {
         </Route>
         <Route path="/supported" exact>
           <Supported />
+        </Route>
+        <Route path="/comments" exact>
+          <Comments />
         </Route>
       </div>
     </Router>

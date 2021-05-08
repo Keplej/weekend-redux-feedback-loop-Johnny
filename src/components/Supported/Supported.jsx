@@ -23,7 +23,7 @@ function Supported() {
             //Is this right? using feelings for the payload?
             dispatch({type: 'GET_SUPPORTED', payload: supported})
             //This is where we use history
-            history.push('/')
+            history.push('/comments')
             // ('/') not 100% sure what to put here yet? 
             // maybe reference a different page (The next page?)
         }
