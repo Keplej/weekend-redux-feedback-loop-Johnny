@@ -39,12 +39,20 @@ const commentsReducer = (state = '', action) => {
     return state;
 }
 
+const reviewReducer = (state = [], action) => {
+    if (action.type === 'GET_COMMENTS') {
+        return action.payload;
+    }
+    return state;
+}
+
 const reduxStore = createStore(
     combineReducers({
         feelingsReducer,
         understandingReducer,
         supportedReducer,
         commentsReducer,
+        reviewReducer,
     }),
     applyMiddleware(logger),
 )

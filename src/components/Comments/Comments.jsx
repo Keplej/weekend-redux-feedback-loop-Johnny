@@ -19,7 +19,7 @@ function Comments() {
             //Is this right? using feelings for the payload?
             dispatch({type: 'GET_COMMENTS', payload: comments})
             //This is where we use history
-            history.push('/')
+            history.push('/review')
             // ('/') not 100% sure what to put here yet? 
             // maybe reference a different page (The next page?)
         }
