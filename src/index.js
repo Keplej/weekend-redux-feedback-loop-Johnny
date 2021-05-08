@@ -18,16 +18,17 @@ const feelingsReducer = (state = 0, action) => {
     return state;
 }
 
-// const feelingsReducer = (state = {}, action) => {
-//     if (action.type === 'GET_FEELINGS') {
-//         return action.payload;
-//     }
-//     return state;
-// }
+const understandingReducer = (state = {}, action) => {
+    if (action.type === 'GET_UNDERSTANDING') {
+        return action.payload;
+    }
+    return state;
+}
 
 const reduxStore = createStore(
     combineReducers({
         feelingsReducer,
+        understandingReducer,
     }),
     applyMiddleware(logger),
 )

@@ -5,6 +5,7 @@ import {HashRouter as Router, Route} from 'react-router-dom';
 import {useDispatch} from 'react-redux';
 
 import Feelings from '../Feelings/Feelings';
+import Understanding from '../Understanding/Understanding';
 
 function App() {
 
@@ -29,16 +30,20 @@ function App() {
   // }
 
   return (
-    <div className='App'>
-      <header className='App-header'>
-        <h1 className='App-title'>Feedback!</h1>
-        <h4>Don't forget it!</h4>
-      </header>
     <Router>
-      <Route path="/" exact/>
-        <Feelings />
+      <div className='App'>
+        <header className='App-header'>
+          <h1 className='App-title'>Feedback!</h1>
+          <h4>Don't forget it!</h4>
+        </header>
+        <Route path="/" exact>
+          <Feelings />
+        </Route>
+        <Route path="/understanding" exact>
+          <Understanding />
+        </Route>
+      </div>
     </Router>
-    </div>
   );
 }
 
