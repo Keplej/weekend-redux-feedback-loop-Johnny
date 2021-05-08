@@ -9,6 +9,8 @@ import Understanding from '../Understanding/Understanding';
 import Supported from '../Supported/Supported';
 import Comments from '../Comments/Comments';
 import Review from '../Review/Review';
+import Submit from '../Submit/Submit';
+
 
 function App() {
 
@@ -53,6 +55,9 @@ function App() {
         </Route>
         <Route path="/review" exact>
           <Review />
+        </Route>
+        <Route path="/submit" exact>
+          <Submit />
         </Route>
       </div>
     </Router>

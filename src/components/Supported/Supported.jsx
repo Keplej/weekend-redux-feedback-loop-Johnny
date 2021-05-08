@@ -32,7 +32,7 @@ function Supported() {
     return(
         <div>
             <h2>How Well are you being supported?</h2>
-            <input placeholder="Testing" type="number" onChange={(event) => setSupported (event.target.value)}>
+            <input placeholder="Between 0 and 5" type="number" onChange={(event) => setSupported (event.target.value)}>
             
             </input>
             <button onClick={handleSupported}>Next Page</button>

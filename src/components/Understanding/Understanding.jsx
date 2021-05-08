@@ -33,7 +33,7 @@ function Understanding() {
     return(
         <div>
             <h2>How Well are you understanding the content?</h2>
-            <input placeholder="Testing" type="number" onChange={(event) => setUnderstanding (event.target.value)}>
+            <input placeholder="Between 0 and 5" type="number" onChange={(event) => setUnderstanding (event.target.value)}>
             
             </input>
             <button onClick={handleUnderstanding}>Next Page</button>

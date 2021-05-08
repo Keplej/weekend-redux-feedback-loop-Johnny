@@ -28,7 +28,7 @@ function Comments() {
     return (
         <div>
             <h2>Please leave a comment!</h2>
-            <input placeholder="Testing" type="text" onChange={(event) => setComments (event.target.value)}>
+            <input placeholder="Please leave a Comment!" type="text" onChange={(event) => setComments (event.target.value)}>
             
             </input>
             <button onClick={handleComments}>Next Page</button>

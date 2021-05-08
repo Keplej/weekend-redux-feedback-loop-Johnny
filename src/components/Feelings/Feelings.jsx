@@ -38,7 +38,7 @@ function Feelings() {
         <>
             <div>
                 <h2>How are you feeling?</h2>
-                <input placeholder="Testing" type="number" onChange={(event) => setFeelings (event.target.value)}>
+                <input placeholder="Between 0 and 5" type="number" onChange={(event) => setFeelings (event.target.value)}>
                 
                 </input>
                 <button onClick={handleFeelings}>Next Page</button>

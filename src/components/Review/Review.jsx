@@ -9,11 +9,11 @@ function Review() {
     // const [review, setReview] = useState('');
     
     // const dispatch = useDispatch();
-    // const history = useHistory();
+    const history = useHistory();
     const reviewSelector = useSelector(store => store);
 
     const handleReview = () => {
-        history.push('')
+        history.push('/submit')
     }
 
     return(
@@ -27,7 +27,6 @@ function Review() {
                     <p>Supported Raiting: {reviewSelector.supportedReducer}</p>
                     <p>Comments: {reviewSelector.commentsReducer}</p>
                 </div>
-                {/* )} */}
             <br/>
             <button onClick={handleReview}>Submit</button>
         </div>
