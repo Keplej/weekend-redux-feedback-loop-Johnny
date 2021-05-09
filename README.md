@@ -1,9 +1,7 @@
-# Project Name
+# Reflections redux loop
 
-[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md
+In this project, using redux and react we had it loop through the pages using routers and routes to get to the next page while also saving information from each page and displaying it after answering all the questions. 
 
-## Description
-
-Your project description goes here. What problem did you solve? How did you solve it?
+Thank you to prime digital academy giving me the oppuntunity to work on this project!
 
 Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).

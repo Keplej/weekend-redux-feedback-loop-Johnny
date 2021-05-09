@@ -4,6 +4,7 @@ import {useHistory} from 'react-router-dom';
 
 function Comments() {
     
+    
     const [comments, setComments] = useState('');
 
     const dispatch = useDispatch();
@@ -16,12 +17,11 @@ function Comments() {
             alert('Please write a comment before continuing!')
             return false;
         } else {
-            //Is this right? using feelings for the payload?
+            // payload is from the useState
             dispatch({type: 'GET_COMMENTS', payload: comments})
             //This is where we use history
             history.push('/review')
-            // ('/') not 100% sure what to put here yet? 
-            // maybe reference a different page (The next page?)
+            // sends us to the review page
         }
     }
 

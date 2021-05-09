@@ -14,26 +14,6 @@ import Submit from '../Submit/Submit';
 
 function App() {
 
-  // const dispatch = useDispatch();
-
-  // useEffect(() => {
-  //   fetchFeedback();
-  // }, [])
-
-  // const fetchFeedback = () => {
-  //   axios.get('/api/feedback')
-  //   .then(response => {
-  //     console.log(response.data);
-  //     dispatch({
-  //       type: 'GET_FEEDBACK',
-  //       payload: response.data});
-  //   })
-  //   .catch(error => {
-  //     alert(`Sorry, this website is currently not working... Try again later.`);
-  //     console.log('Error getting feedback', error);
-  //   })
-  // }
-
   return (
     <Router>
       <div className='App'>

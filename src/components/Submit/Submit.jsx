@@ -4,6 +4,7 @@ function Submit() {
 
     const history = useHistory();
 
+    // Sends you back to the home page
     const handleSubmit = () => {
         history.push('/')
     }

@@ -7,10 +7,8 @@ import {createStore, combineReducers, applyMiddleware} from 'redux';
 import {Provider} from 'react-redux';
 import logger from 'redux-logger';
 
+// These are each pages reducer so it can be sent to the next page.
 
-// Do we want to put in multiple things into the feedbackReducer?
-// Do we want to use something we can switch with?
-// Is the 'GET_FEEDBACK' go into this feedbackReducer?
 const feelingsReducer = (state = 0, action) => {
     if (action.type === 'GET_FEELINGS') {
         return action.payload;
@@ -59,14 +57,3 @@ const reduxStore = createStore(
 
 ReactDOM.render(<Provider store={reduxStore}><App /></Provider>, document.getElementById('root'));
 registerServiceWorker();
-
-
-// MIGHT WANT TO USE SWITCH CASES FOR THE FEEDBACK REDUCER
-
-// function appReducer(state = initialState, action) {
-//     switch (action.type) {
-//       case 'SET_VISIBILITY_FILTER': {
-//         return Object.assign({}, state, {
-//           visibilityFilter: action.filter
-//         })
-//       }

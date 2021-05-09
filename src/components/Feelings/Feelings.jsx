@@ -1,4 +1,3 @@
-// import { response } from "express";
 import { useState } from "react"
 import {useDispatch} from 'react-redux';
 import {useHistory} from 'react-router-dom';
@@ -6,9 +5,6 @@ import {useHistory} from 'react-router-dom';
 function Feelings() {
 
     const [feelings, setFeelings] = useState('');
-
-    // const feelingsList = useSelector(store => store.feedbackReducer);
-    // console.log(feelingsList);
     
     const dispatch = useDispatch();
     const history = useHistory();
@@ -24,12 +20,11 @@ function Feelings() {
             alert('Please select a number between 0 and 5 before continuing!')
             return false;
         } else {
-            //Is this right? using feelings for the payload?
+            // payload is from the useState
             dispatch({type: 'GET_FEELINGS', payload: feelings})
             //This is where we use history
+            // References to the next page
             history.push('/understanding')
-            // ('/') not 100% sure what to put here yet? 
-            // maybe reference a different page (The next page?)
         }
     }
 

@@ -20,12 +20,11 @@ function Supported() {
             alert('Please select a number between 0 and 5 before continuing!')
             return false;
         } else {
-            //Is this right? using feelings for the payload?
+            // payload is from the useState
             dispatch({type: 'GET_SUPPORTED', payload: supported})
             //This is where we use history
             history.push('/comments')
-            // ('/') not 100% sure what to put here yet? 
-            // maybe reference a different page (The next page?)
+            //This will send us to the next page
         }
     }
 

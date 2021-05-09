@@ -6,12 +6,11 @@ import {useHistory} from 'react-router-dom';
 
 function Review() {
 
-    // const [review, setReview] = useState('');
-    
-    // const dispatch = useDispatch();
+    // We use history to get the data from the previous pages
     const history = useHistory();
     const reviewSelector = useSelector(store => store);
 
+    // Lets you go to the next page which is submit
     const handleReview = () => {
         history.push('/submit')
     }
@@ -20,7 +19,6 @@ function Review() {
         <div>
             <h2>Review Your Feedback!</h2>
             <br/>
-                {/* {reviewSelector.map((item, i) => */}
                 <div>
                     <p>Feeling Raiting: {reviewSelector.feelingsReducer}</p>
                     <p>Content Raiting: {reviewSelector.understandingReducer}</p>

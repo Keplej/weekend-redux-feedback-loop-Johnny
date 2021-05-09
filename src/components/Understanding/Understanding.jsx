@@ -21,12 +21,11 @@ function Understanding() {
             alert('Please select a number between 0 and 5 before continuing!')
             return false;
         } else {
-            //Is this right? using feelings for the payload?
+            // payload is from the useState
             dispatch({type: 'GET_UNDERSTANDING', payload: understanding})
             //This is where we use history
             history.push('/supported')
-            // ('/') not 100% sure what to put here yet? 
-            // maybe reference a different page (The next page?)
+            // Will send us to the supported page
         }
     }
 
